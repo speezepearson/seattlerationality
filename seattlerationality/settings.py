@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'lightning_talks.apps.LightningTalksConfig', # adapted from https://docs.djangoproject.com/en/1.9/intro/tutorial02/#activating-models
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

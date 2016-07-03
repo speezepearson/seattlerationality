@@ -1,5 +1,4 @@
 <!--
-  Simple placeholder template.
   Adapted from
     https://docs.djangoproject.com/en/1.9/intro/tutorial03/#write-views-that-actually-do-something
   Full templating language reference lives at
@@ -10,6 +9,10 @@ All lightning talks:
 
 <ul>
   {% for talk in all_talks %}
-    <li> {{ talk }} </li>
+    <li>
+      <p><strong>{{ talk.title }}</strong> (given by {{ talk.speaker }} on {{ talk.given_on | date:'Y F d'}})</p>
+
+      {{ talk.embed_video_html | safe }}
+    </li>
   {% endfor %}
 </ul>

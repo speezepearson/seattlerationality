@@ -56,7 +56,7 @@ ROOT_URLCONF = 'seattlerationality.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['seattlerationality/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

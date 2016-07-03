@@ -6,7 +6,7 @@ To run it:
 - `pip install django`;
 - `python add_dummy_data.py` (if you want any data in your database);
 - `python manage.py runserver`;
-- visit `localhost:8000/lightning_talks` (currently the only semi-functional part of the site).
+- visit `localhost:8000`.
 
 (This is a prototype, not suitable for production, because the `SECRET_KEY` has been exposed to the world. We'll need to, I dunno, at least make the repo private, then change the secret key, and *then* fire the site up for real.)
 

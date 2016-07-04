@@ -19,8 +19,8 @@ from django.contrib import admin
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.index),
-    url(r'^calendar$', views.calendar),
+    url(r'^$', views.index, name='home'),
+    url(r'^calendar$', views.calendar, name='calendar'),
     url(r'^lightning_talks/', include('lightning_talks.urls')), # adapted from https://docs.djangoproject.com/en/1.9/intro/tutorial01/#write-your-first-view
     url(r'^admin/', admin.site.urls),
 ]

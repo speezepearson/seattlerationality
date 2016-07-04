@@ -4,6 +4,7 @@ from django.conf.urls import url
 
 from . import views
 
+app_name = 'lightning_talks'
 urlpatterns = [
     # ex: /lightning_talks/
     url(r'^$', views.index, name='index')

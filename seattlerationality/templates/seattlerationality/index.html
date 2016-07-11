@@ -1,22 +1,25 @@
 {% extends "base.html" %}
 {% block body %}
 
-<h1>Seattle Rationality</h1>
+<div class="row">
+  <div class="col-lg-12 text-center">
+    <h1>Seattle Rationality</h1>
+    <p class="lead">Big subtitleish thing!</p>
+  </div>
 
-Site index:
-<ul>
-  <li><a href="{% url 'lightning_talks:index' %}">lightning talks</a></li>
-  <li><a href="{% url 'calendar' %}">calendar</a></li>
-</ul>
+  <p>Here's a <a href="/calendar">calendar</a>.</p>
 
-External links:
-<ul>
-  <li><a href="https://www.facebook.com/groups/seattlerationality/">our Facebook page</a></li>
-  <li><a href="https://www.facebook.com/groups/SeattleEffectiveAltruists/">Seattle Effective Altruists' Facebook page</a></li>
-</ul>
+  <p>Here're our <a href="{% url 'lightning_talks:index' %}">lightning talks</a>.</p>
 
-<p style="font-size:.8em; color:gray">
-  (<a href="/admin">Admin site</a>. You'll have to <code>python manage.py createsuperuser</code> to log in.)
-</p>
+  <p>Here's our <a href="https://www.facebook.com/groups/seattlerationality/">Facebook page</a>.</p>
+
+  <p>Here's <a href="https://www.facebook.com/groups/SeattleEffectiveAltruists/">Seattle Effective Altruists' Facebook page</a>.</p>
+
+  <p style="font-size:.8em; color:gray">
+    (<a href="/admin">Admin site</a>. You'll have to <code>python manage.py createsuperuser</code> to log in.)
+  </p>
+
+</div>
+
 
 {% endblock %}
